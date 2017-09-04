@@ -6,3 +6,14 @@ db.createUser(
     roles: [ { role: "userAdmin", db: "santhosh2129" } ]
   }
 )
+
+starts at http://localhost:9003/
+
+POST /santhosh2129/email/send
+
+{
+  "emailId": "string",
+  "message": "string"
+}
+
+post on rabbit mq
