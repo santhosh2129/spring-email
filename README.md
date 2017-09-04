@@ -17,3 +17,5 @@ POST /santhosh2129/email/send
 }
 
 post on rabbit mq
+
+swagger UI http://localhost:9003/swagger-ui.html
