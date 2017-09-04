@@ -1,30 +1,21 @@
-# README #
+use admin
+db.createUser(
+  {
+    user: "santhosh2129",
+    pwd: "santhosh2129",
+    roles: [ { role: "userAdmin", db: "santhosh2129" } ]
+  }
+)
 
-end point to put messange in rabbit mq
+starts at http://localhost:9003/
 
-fetch from rabbit mq and sem mail using spring boot mail
-### What is this repository for? ###
+POST /santhosh2129/email/send
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+{
+  "emailId": "string",
+  "message": "string"
+}
 
-### How do I get set up? ###
+post on rabbit mq
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+swagger UI http://localhost:9003/swagger-ui.html
